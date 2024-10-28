@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Growth Haven</title>
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Growth Haven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="habits.html">Habits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="journal.html">Journal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="goals.html">Goals</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="content container py-5">
+        <h1 class="text-center mb-5">User Dashboard</h1>
+
+        <!-- Recent Journal Entries Section -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <a href="journal.html" class="text-decoration-none">
+                    <h2 class="text-center mb-4">Recent Journal Entries</h2>
+                    <ul id="recent-journal-entries" class="list-group list-group-flush"></ul>
+                </a>
+            </div>
+        </div>
+
+        <!-- Goals Overview Section -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-3">
+                <a href="goals.html" class="text-decoration-none">
+                    <div class="card text-center shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Goals</h5>
+                            <p id="total-goals" class="card-text display-6">0</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="goals.html" class="text-decoration-none">
+                    <div class="card text-center shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Completed Goals</h5>
+                            <p id="completed-goals" class="card-text display-6">0</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Habits Overview Section -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-3">
+                <a href="habits.html" class="text-decoration-none">
+                    <div class="card text-center shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Active Habits</h5>
+                            <p id="active-habits" class="card-text display-6">0</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="habits.html" class="text-decoration-none">
+                    <div class="card text-center shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Longest Streak</h5>
+                            <p id="longest-streak" class="card-text display-6">0 days</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Overall Progress Section -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-8">
+                <a href="progress.html" class="text-decoration-none">
+                    <h2 class="text-center mb-3">Overall Goal Progress</h2>
+                    <div class="progress">
+                        <div id="overall-progress-bar" class="progress-bar bg-primary" role="progressbar" 
+                             style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4 mt-5">
+        <div class="container">
+            <p>&copy; 2024 Growth Haven. All Rights Reserved.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">About Us</a></li>
+                <li class="list-inline-item">|</li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item">|</li>
+                <li class="list-inline-item"><a href="#">Contact</a></li>
+            </ul>
+            <div class="social-icons mt-2">
+                <a href="#" class="text-dark mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#" class="text-dark mx-2"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#" class="text-dark mx-2"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,541 @@
+.mainlogo {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  width: 300px; /* Set the desired width for the circular shape */
+  height: auto; /* Set the same height to make it a circle */
+  border-radius: 50%; /* Create a circular shape */
+  background-color: #9fc584; /* Optional background color */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  top: 70px;
+  left: 25px;
+}
+
+
+.tree {
+  max-width: 100%; /* Ensure the image fits within the circle */
+  border-radius: 50%; /* Clip the image to match the circle shape */
+  
+}
+
+
+/* Customize the navbar color */
+.navbar-custom {
+  background-color: #c8e6c9; /* Greenish color */ 
+    display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Customize the navbar links */
+.navbar-custom .nav-link {
+  color: #4caf50; /* Dark green */
+  margin-right: 20px;
+
+}
+
+#navbarNav{
+  justify-content: center;
+
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px; /* Adjust as needed */
+  size: 1000px;
+  background-color: #85c787;
+  border-top: 1px solid #e7e7e7;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer li {
+  display: inline-block;
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.footer a {
+  text-decoration: none;
+  color: #130404; /* Choose an appropriate color */
+  font-size: 14px; /* Adjust font size */
+}
+
+/* Add a separator between links */
+.footer li:not(:last-child)::after {
+  content: "|";
+  margin-left: 10px;
+  color: #999; /* Separator color */
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.content {
+  min-height: 19%;
+  padding-bottom: 50px; /* Height of the footer */
+  box-sizing: border-box;
+  background-color: #e0f0e0;
+}
+
+.center-text {
+  display: inline-block;
+  white-space: nowrap;
+  margin-top: 20px; /* Adjust as needed */
+  margin-left: 20px;
+  font-family: 'YourFontFamily'; /* Match the font family */
+  font-size: 2em; /* Adjust size to match the image */
+   /* Match the color */
+}
+
+.subheading {
+  font-family: 'Arial, sans-serif';
+  font-size: 1.5em;
+  color: #4CAF50;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 5px;
+  border-bottom: 2px solid #4CAF50;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.maintext{
+  position: relative; /* or other values */
+  top: 70px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  margin-top: 5px;
+}
+
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Style the features container */
+.features-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: #f0f7eb; /* Optional background color */
+}
+
+/* Style each feature column */
+.feature-column {
+  text-align: center;
+  flex: 1;
+  margin: 100px;
+  padding-right: 90px; /* Add some spacing to the right of each column */
+}
+
+.feature-column:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+/* Style the icons */
+.feature-icon {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+/* Style the headings and descriptions */
+.feature-column h3 {
+  font-size: 1.2em;
+  color: #4CAF50; /* Match your color scheme */
+}
+
+.feature-column p {
+  font-size: 1em;
+  color: #333;
+}
+
+
+/* Goals.html page */
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and background */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333; /* Dark gray text color */
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #4caf50; /* Green header background */
+  color: #fff; /* White header text */
+}
+
+/* Centered text style */
+.center-text {
+  font-size: 1.8em;
+  margin-top: 20px;
+}
+
+/* Subheading style */
+.subheading {
+  font-size: 1.2em;
+  color: #4caf50; /* Green subheading color */
+  margin-bottom: 30px;
+  padding: 5px;
+  border-bottom: 2px solid #4caf50; /* Underline effect */
+}
+
+/* Goal input form */
+#goal-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; /* White form background */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form labels and input fields */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Submit button */
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #ddd; /* Light gray footer background */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px; /* Adjust as needed */
+}
+
+/* Optional: Add nature-themed background images or icons */
+/* Example: body { background-image: url('path/to/nature-image.jpg'); } */
+
+/* Additional styling for progress bars, icons, etc. (customize as needed) */
+/* Example: .progress-bar { ... } */
+
+/* Feel free to add more styles based on your design preferences! */
+
+.habit-form {
+  margin: 20px 0;
+}
+
+.habit-form input {
+  padding: 10px;
+  width: 70%;
+  margin-right: 10px;
+}
+
+.habit-form button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.habit-list {
+  list-style: none;
+  padding: 0;
+}
+
+.habit-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.habit-item span.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.complete-btn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+.journal-form {
+  margin: 20px 0;
+}
+
+.journal-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.journal-form button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.journal-list {
+  list-style: none;
+  padding: 0;
+}
+
+.journal-entry {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+.journal-entry p {
+  margin: 0 0 5px;
+}
+
+.journal-entry small {
+  display: block;
+  margin-bottom: 10px;
+  color: #888;
+}
+
+.delete-entry-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.goal-form {
+  margin: 20px 0;
+}
+
+.goal-form input,
+.goal-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.goal-form button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.goal-list {
+  list-style: none;
+  padding: 0;
+}
+
+.goal-item {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+.delete-goal-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.content {
+  text-align: center;
+}
+
+footer {
+  background-color: #e9ecef;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Feature Columns */
+.feature-column {
+  margin-bottom: 20px;
+}
+
+.feature-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+
+.journal-form textarea {
+  width: 80%;
+  margin: auto;
+  max-width: 600px;
+}
+
+.journal-entries ul {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+
+.journal-entries ul {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.journal-entries .list-group-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+}
+
+.journal-entries h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.journal-entries .btn-danger {
+  align-self: flex-end;
+}
+
+
+.calendar {
+display: flex;
+justify-content: space-around;
+margin-top: 10px;
+}
+
+.calendar-day {
+width: 30px;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+font-weight: bold;
+}
+
+.content {
+background-color: #e8f5e9;
+padding: 50px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+margin-bottom: 20px;
+border-radius: 8px;
+}
+
+.progress {
+height: 30px;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.list-group-item {
+border: none;
+padding: 15px 0;
+font-size: 1.2rem;
+}
+
+.shadow-sm {
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}

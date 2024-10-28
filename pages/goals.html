@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART Goals - Growth Haven</title>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Growth Haven</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="habits.html">Habits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="journal.html">Journal</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="goals.html">Goals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="content container py-5">
+        <h1 class="text-center mb-4">Goal Setter</h1>
+
+        <!-- Goal Form -->
+        <div class="goal-form text-center">
+            <input 
+                type="text" 
+                class="form-control mb-3" 
+                id="goal-title" 
+                placeholder="Goal Title" 
+                required 
+            />
+            <textarea 
+                class="form-control mb-3" 
+                id="goal-description" 
+                rows="3" 
+                placeholder="Goal Description" 
+                required 
+            ></textarea>
+            <input 
+                type="date" 
+                class="form-control mb-3" 
+                id="goal-deadline" 
+                required 
+            />
+            <button class="btn btn-primary" id="add-goal-btn">Add Goal</button>
+        </div>
+
+        <!-- Display Goals Section -->
+        <div class="goal-list mt-5">
+            <h2 class="text-center mb-4">Your Goals</h2>
+            <ul id="goal-list" class="list-group"></ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4 mt-5">
+        <div class="container">
+            <p>&copy; 2024 Growth Haven. All Rights Reserved.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">About Us</a></li>
+                <li class="list-inline-item">|</li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item">|</li>
+                <li class="list-inline-item"><a href="#">Contact</a></li>
+            </ul>
+            <div class="social-icons mt-2">
+                <a href="#" class="text-dark mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#" class="text-dark mx-2"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#" class="text-dark mx-2"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/goals.js"></script>
+
+</body>
+
+</html>
